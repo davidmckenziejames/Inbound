@@ -33,10 +33,9 @@ import {
 } from "react-router-dom";
 import theme from "./theme";
 import { HelmetProvider } from "react-helmet-async";
-import Index from "./pages/Home";
 import Home from "./pages/Home";
 import Admin from "./pages/Admin";
-import Form from "./pages/Form";
+import Jigsaw from "./pages/Jigsaw";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -44,12 +43,12 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       <ChakraProvider theme={theme}>
         <Router>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/pests" element={<Home />} />
             <Route path="/admin" element={<Admin />} />
-            <Route path="/form" element={<Form />} />
+            <Route path="/jigsaw" element={<Jigsaw />} />
           </Routes>
         </Router>
       </ChakraProvider>
     </HelmetProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

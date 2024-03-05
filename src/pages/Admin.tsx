@@ -8,7 +8,6 @@ import {
   TabPanel,
   Image,
 } from "@chakra-ui/react";
-import PestCard from "../PestQuiz/PestCard";
 import LeadCard from "../components/LeadCard";
 
 export default function Admin() {
@@ -42,13 +41,7 @@ export default function Admin() {
         py="20px"
         gap="30px"
       >
-        <Flex
-          id="pestrow"
-          w="100%"
-          h="100%"
-          gap={"20px"}
-          flexWrap={"wrap"}
-        >
+        <Flex id="pestrow" w="100%" h="100%" gap={"20px"} flexWrap={"wrap"}>
           <LeadCard />
         </Flex>
       </Flex>

@@ -8,7 +8,6 @@ import {
   TabPanel,
   Image,
 } from "@chakra-ui/react";
-import PestCard from "../PestQuiz/PestCard";
 import PestCards from "../PestQuiz/Pests";
 
 export default function Home() {

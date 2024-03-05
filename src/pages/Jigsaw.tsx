@@ -43,7 +43,7 @@ function isIOS() {
     (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)
   );
 }
-export default function Form() {
+export default function Jigsaw() {
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
   const [companySize, setCompanySize] = useState<string>("");
   const [companyIndustry, setCompanyIndustry] = useState<string>("");
@@ -58,7 +58,7 @@ export default function Form() {
   const [showCheckout, setShowCheckout] = useState<boolean>(false);
   const checkoutRef = useRef<HTMLDivElement>(null);
   const [categoryFilter, setCategoryFilter] = useState<string | undefined>(
-    "Services"
+    "Services",
   );
 
   const handleSubmit = (event?: React.SyntheticEvent) => {
@@ -76,7 +76,7 @@ export default function Form() {
 
   // Filter options based on selected category
   const filteredOptions = options.filter((option) =>
-    categoryFilter === "All" ? true : option.category === categoryFilter
+    categoryFilter === "All" ? true : option.category === categoryFilter,
   );
 
   const handleOptionSelect = (value: string) => {
