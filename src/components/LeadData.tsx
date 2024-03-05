@@ -1,0 +1,14 @@
+export const BUILDING = "Commercial";
+export const ISSUE = "Bedbugs";
+export const BEDROOMS = "20";
+export const SOURCE = ["Organic", "Google", "Mobile"];
+export const DATE = "4th March";
+export const TIME_OF_DAY = "Morning";
+export const POSTCODE = "YO24 4BD";
+export const FIRST_NAME = "David";
+export const LAST_NAME = "McKenzie-James";
+export const EMAIL = "davidmckenziejames@gmail.com";
+export const PHONE = "07896659121";
+export const COMPANY = "Marriot Hotels";
+export const NOTES = "hello";
+export const UUID = "793829";
